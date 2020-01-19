@@ -1,0 +1,130 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+    font-family: arial;
+    color: #2f4eee;
+}
+
+h1 {
+    margin-top: 3%;
+    color: #2f4eee;
+}
+
+img {
+    width: 250px;
+}
+
+img#weather-icon {
+    width: 150px;
+}
+
+.daily-icon-image {
+    width: 50px;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: rgb(0,0,0,0);
+    color: white;
+    height: 97.5%;
+    width: 10%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    border-bottom: 3px solid #CCC;
+    color: #CCC;
+}
+
+.page-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 10%;
+    margin-bottom: 1%;
+}
+
+.button-bar {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 1%;
+    background: #2f4eee;
+    color: white;
+    /* box-shadow: 0px 1px 0px 0px; */
+}
+
+.content {
+    height: 900px;
+    width: 100%;
+}
+
+.daily-content-area {
+    height: 200px;
+    width: 100%;
+}
+
+.daily-box {
+    height: 200px;
+    width: 9%;
+    margin: 0.5%;
+    padding: 1%;
+    border-radius: 25px;
+    border: 1px solid #2f4eee;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+input[type=search] {
+    width: 85%;
+    height: 50px;
+    float: left;
+    border-radius: 10px 0px 0px 10px;
+    outline: none;
+    font-size: 20px;
+    padding: 1.5%;
+    border: 1px solid #000000;
+}
+
+input[type=search]:focus {
+    border: 3px solid #2f4eee;
+    color: #2f4eee;
+}
+
+.searchBarArea {
+    width: 40%;
+    height: 50px;
+    margin-top: 3%;
+    border-radius: 10px;
+}
+
+.searchBarArea button {
+    height: 50px;
+    width: 15%;
+    background: #2f4eee;
+    border-radius: 0px 10px 10px 0px;
+    color: white;
+}
+
+.searchBarArea button:hover {
+    background: #CCC;
+    border: none;
+    color: black;
+}
+
+.weatherDataArea {
+    height: 40%;
+    width: 38%;
+    margin-top: 2%;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather Website</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <center>
+                {{>header}}
+                <div class="content">
+                    <div class="searchBarArea">
+                        <form>
+                            <input id="search-button" type="search" placeholder="Search a location... "/>
+                            <button>Search</button>
+                        </form>
+                    </div>
+                    <div class="weatherDataArea">
+                        <h3 id="search-message"></h3>
+                        <br>
+                        <p id="location-paragraph"></p>
+                        <img id="forecast-image" src="#">
+                        <p id="forecast-paragraph"></p>
+                        <br>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="daily-content-area">
+                        <h3>The next week's forecast: </h3>
+                        <br>
+                        <br>
+                        <div class="daily-box">
+                            <img class="daily-icon-image" id="daily-icon-1" src="#">
+                            <p id="day-one-forecast"></p>
+                            <p id="day-one-max-temp"></p><p id="day-one-min-temp"></p>
+                        </div>
+                        <div class="daily-box">
+                            <img class="daily-icon-image" id="daily-icon-2">
+                            <p id="day-two-forecast"></p>
+                            <p id="day-two-max-temp"></p><p id="day-two-min-temp"></p>
+                        </div>
+                        <div class="daily-box">
+                            <img class="daily-icon-image" id="daily-icon-3" >
+                            <p id="day-three-forecast"></p>
+                            <p id="day-three-max-temp"></p><p id="day-three-min-temp"></p>
+                        </div>
+                        <div class="daily-box">
+                            <img class="daily-icon-image" id="daily-icon-4" >
+                            <p id="day-four-forecast"></p>
+                            <p id="day-four-max-temp"></p><p id="day-four-min-temp"></p>
+                        </div>
+                        <div class="daily-box">
+                            <img class="daily-icon-image" id="daily-icon-5">
+                            <p id="day-five-forecast"></p>
+                            <p id="day-five-max-temp"></p><p id="day-five-min-temp"></p>
+                        </div>
+                        <div class="daily-box">
+                            <img class="daily-icon-image" id="daily-icon-6" >
+                            <p id="day-six-forecast"></p>
+                            <p id="day-six-max-temp"></p><p id="day-six-min-temp"></p>
+                        </div>
+                        <div class="daily-box">
+                            <img class="daily-icon-image" id="daily-icon-7" >
+                            <p id="day-seven-forecast"></p>
+                            <p id="day-seven-max-temp"></p><p id="day-seven-min-temp"></p>
+                        </div>
+                        <p>Icons made by Linector from www.flaticon.com</p>
+                    </div>
+                </div>
+                {{>footer}}
+            </center>
+        </div>
+        
+        <script src="/js/app.js"></script>
+    </body>
+</html>
