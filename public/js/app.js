@@ -95,7 +95,7 @@ weatherForm.addEventListener('submit', (e) => {
     }
 
     //Fetching data, waiting two seconds, and then fetching it again with a response print
-    fetch('http://localhost:3000/weatherData?address=' + location)
+    fetch('/weatherData?address=' + location)
     searchMessage.textContent = 'Loading...'
     messageOne.textContent = ''
     messageTwo.textContent = ''
@@ -103,7 +103,7 @@ weatherForm.addEventListener('submit', (e) => {
     dailyForecastData.style.display = "none"
 
     setTimeout(() => {
-        fetch('http://localhost:3000/weatherData?address=' + location).then((response) => {
+        fetch('/weatherData?address=' + location).then((response) => {
             response.json().then((data) => {
                 if(data.error) {
                     searchMessage.textContent = 'Unable to find location. Try another search.'
@@ -157,6 +157,6 @@ weatherForm.addEventListener('submit', (e) => {
                 }
             })
         })
-    }, 2000)
+    }, 2500)
     
 })
