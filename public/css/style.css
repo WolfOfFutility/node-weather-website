@@ -27,7 +27,7 @@ img#weather-icon {
 button {
     outline: none;
     border: none;
-    background: rgb(0,0,0,0);
+    background: #2f4eee;
     color: white;
     height: 97.5%;
     width: 10%;
